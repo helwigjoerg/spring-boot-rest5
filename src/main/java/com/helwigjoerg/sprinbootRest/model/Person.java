@@ -1,6 +1,8 @@
 package com.helwigjoerg.sprinbootRest.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 
@@ -9,6 +11,8 @@ public class Person {
 
 	
 @Id
+@GeneratedValue
+@Column(nullable = false)
 private Integer id;
 private String firstName;
 private String lastName;
